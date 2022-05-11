@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <link rel="stylesheet" href="css/header_footer.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/resize.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/1d2a01c042.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pixtro customs</title>
+    <link rel="icon" type="image/x-icon" href="images/logo top.png">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="H_logo">
+                <a href="index.html"><img src="images/Logo.png" height="100px"></a>
+            </div>
+            <nav>
+                <div class="H_Nav_links H_Nav_eff">
+                    <a class="H_keyboards"  href="keyboard.html">Keyboards</a>
+                    <a class="H_contact"  href="contact.html"> Contact</a>
+                    <div>
+                        <div class="H_nav_phone">
+                            <i class="H_nav_phone_icon fa-solid fa-bars"></i>
+                            <div class="H_nav_phone-dropdown">
+                                <div class="dropdown_arrow"></div>
+                                <a class="H_phone_keyboards"  href="keyboard.html">Keyboards</a>
+                                <div class="border"></div>
+                                <a class="H_phone_contact"  href="contact.html"> Contact</a>
+                            </div>
+                        </div>
+                        <div class="H_cart">
+                            <i class="H_cart_icon fa-solid fa-cart-shopping"></i>
+                            <div class="H_cart-dropdown">
+                                <div style="margin:auto;border-bottom: #0d013b solid 2px; width:fit-content;padding:20px 0 10px 0; height: 30px; font-size: 14px;" id="H_cart_amount">You have: 0 items</div>
+                                <div class="dropdown_arrow"></div>
+                                <div class="cart_item" id="cart_items"></div >
+                                <div style="padding:20px 0 20px 0; height: 30px; font-size: 14px;" id="H_cart_totprice">Total price is: € 0</div>
+                                <button class="H_cart_button" onclick="completeOrder()">complete order</button> 
+                                <div style="height: 30px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                        
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div id="contact">
+        <DIV class="form" >
+            <form action="https://formsubmit.co/matthias.devilder@gmail.com" method="POST">
+                <div style="padding-top:30px;"class="formtitle row">
+                    Contact us
+                </div>
+                <div class="row r_longer contact_links">
+                <div class="form_33">
+                    <a href="https://www.google.be/maps/place/Ter+Hauwestraat+3,+8490+Jabbeke/@51.189505,3.1441299,17.5z/data=!4m5!3m4!1s0x47c353c580fe53b7:0x846de913d5c0ad21!8m2!3d51.1895479!4d3.1455204"><img src="images/location.png" height="50px"></a>
+                        <p>
+                            <h1>Address</h1>
+                            <h3>
+                                ter hauwestraat 3<br>
+                                8490 varsenare<br>
+                                belgium
+                            </h3>
+                        </p>
+                </div>
+                <div class="form_33">
+                    <a href="tel:+320472532876"><img src="images/phone.png" height="50px"></a>
+                        <p>
+                            <h1>Phone</h1>
+                            <a href="tel:+320472532876" style="color: #828282;"><h3>+32-0472-532876</h3></a>
+                        </p> 
+                </div>
+                <div class="form_33">
+                    <a href="mailto:matthias.devilder@gmail.com"><img src="images/email.png" height="50px"></a>
+                        <p>
+                            <h1>Email</h1>
+                            <a href="mailto:matthias.devilder@gmail.com" style="color: #828282;"><h3>matthias.devilder@gmail.com</h3></a>
+                        </p>
+                </div>
+                </div>
+                <div class="formtitle row">
+                    Tech Support
+                </div>
+                <div class="row row_p">
+                    <div class="form_group form_50">
+                        <label for="first_name_">First name:</label>
+                        <input class="formbox f_left"type="text" name="first name" autocomplete="off" id="first_name_"placeholder="First Name...">
+                    </div>
+                    <div class="form_group form_50">
+                        <label for="last_name_">Last Name:</label> 
+                        <input class="formbox f_right"type="text" name="last name" autocomplete="off"id="last_name_"placeholder="Last Name...">
+                    </div>
+                </div>
+                <div class="row row_p">
+                    <div class="form_group form_50">
+                        <label for="email_">Email:</label>
+                        <input class="formbox f_left"type="email" name="email"autocomplete="off" id="email_" required placeholder="Email...">
+                    </div>
+                    <div class="form_group form_50">
+                        <label for="phone_">Phone:</label>
+                        <input class="formbox f_right"type="text" name="phone"autocomplete="off" id="phone_" placeholder="Number...">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form_group form_100">
+                        <label for="subject_">Subject</label>
+                        <select class="formbox"type="Subject" name="subject" id="subject_">
+                            <option value="Choose">Choose</option>
+                            <option value="Technical Support">Technical Support</option>
+                            <option value="Sales Contact">Sales Contact</option>
+                            <option value="Billing Support">Billing Support</option>
+                            <option value="Refund">Refund</option>
+                            <option value="Other">Other...</option>
+                        </select>
+                    </div>
+                </div>
+           
+                <div class="row  r_long">
+                    <div class="form_group form_100" style="padding-bottom:30px;">
+                        <label for="message_">Message</label>
+                        <textarea style="min-height: 100px; min-width: 100%;" class="formbox form_100" type="message" name="message" autocomplete="off" id="message_" required placeholder="Your message..."></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form_group form_100">
+                        <button class="button" type="submit"> <a style="font-size: 15px; padding-right:10px ;">SUBMIT</a></button>
+                    </div>
+                </div>
+           </form> 
+        </DIV>
+    </div>
+    </main>
+    <footer>
+        <div class="F_discription">
+            <div class="F_discription_text" >
+                <p>About:</p>
+                <p>Our company makes customs keyboards with high end materials</p>
+            </div>
+        </div>
+        <div class="F_links">
+            <div class="F_links__">
+                <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://discord.com"><i class="fa-brands fa-discord"></i></a>
+            </div>
+        </div>
+        
+    </footer>
+    <div class="F_copyright">
+       <div class="margin_auto">© Pixtro Incorporated</div> 
+    </div>
+    <script src="JavaScript/cart.js"></script>
+</body>
+</html>
+</form>

@@ -1,0 +1,115 @@
+.float_left{
+    float: left;
+}
+.float_right{
+    float: right;
+}
+.margin_auto{
+    width: fit-content;
+    margin: auto;
+}
+.img_margin{
+    margin: auto;
+    width: 320px;
+}
+.content{
+    width: 900px;
+    margin: auto;
+}
+colgroup{
+    color: #67dacc; /* header text */
+    color: #FF8484;/* hover */
+    color: #271664;/* header */
+    color: #bcfdef;/* backgrond 2 */
+    color: #D6FFF6;/* backgrond */
+    color: #2374AB;/* icons */
+    color: #000000;/* text */
+}
+select,input{
+    font-family: monospace;
+    width: 100%;
+    height: auto;
+    padding: 6px;
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    border: 1px solid #271664;
+    border-bottom: 4px solid #2374AB;
+    border-radius: 5px;
+    background-color: #ddfcf5;
+}
+select:focus ,input:focus{
+    outline: none;
+    border-bottom: #FF8484 4px solid;
+}
+
+
+.item_order{
+    margin: 50px 0 200px;
+    display: flex;
+    height: fit-content;
+    border: #bcfdef solid 20px;
+    padding: 10px 0;
+    background-color: #bcfdef;
+    color: #ffffff;
+}
+
+
+.item__name{
+    text-align: center;
+    color: #000000;
+    font-size: 30px;
+    height: 40px;
+    width: 100%;
+    padding:  20px 0 30px 0;
+    font-weight: 600;
+}
+.item_preview{
+    display: flex;
+    
+    width: 360px;
+    height: inherit;
+}
+.discription{
+    color: #000000;
+    text-align:center;font-weight: 400; margin: 0px 30px;
+}
+.item_specs{
+    display: block;
+    padding: 10px;
+    color: #000000;
+    padding: 0 20px;
+    width: 450px;
+}
+.select_menu{
+    padding: 20px 0 0;
+}
+.select_menu_{
+    padding: 20px 0 0;
+}
+
+.price{
+    padding: 30px 0 10px 0;
+    border-bottom: #271664 3px solid;
+}
+.padding_30px{
+    padding: 40px 0px 0;
+}
+
+.menu_bottom{
+    margin-bottom: 20px;
+}
+button{
+    font-size: 15px;
+    font-weight: 600;
+    border:0px;
+    color: #ffffff;
+    background-color: #271664;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 6px 0; 
+    resize: vertical; 
+    cursor: pointer;
+}
+button:active{
+    transform: scale(0.95);
+}

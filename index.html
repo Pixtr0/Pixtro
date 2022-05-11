@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/header_footer.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/resize.css">
+    <script src="https://kit.fontawesome.com/1d2a01c042.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixtro customs</title>
+    <link rel="icon" type="image/x-icon" href="images/logo top.png">
+    
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="H_logo">
+                <a href="index.html"><img src="images/Logo.png" height="100px"></a>
+            </div>
+            <nav>
+                <div class="H_Nav_links H_Nav_eff">
+                    <a class="H_keyboards"  href="keyboard.html">Keyboards</a>
+                    <a class="H_contact"  href="contact.html"> Contact</a>
+                    <div>
+                        <div class="H_nav_phone">
+                            <i class="H_nav_phone_icon fa-solid fa-bars"></i>
+                            <div class="H_nav_phone-dropdown">
+                                <div class="dropdown_arrow"></div>
+                                <a class="H_phone_keyboards"  href="keyboard.html">Keyboards</a>
+                                <div class="border"></div>
+                                <a class="H_phone_contact"  href="contact.html"> Contact</a>
+                            </div>
+                        </div>
+                        <div class="H_cart">
+                            <i class="H_cart_icon fa-solid fa-cart-shopping"></i>
+                            <div class="H_cart-dropdown">
+                                <div style="margin:auto;border-bottom: #0d013b solid 2px; width:fit-content;padding:20px 0 10px 0; height: 30px; font-size: 14px;" id="H_cart_amount">You have: 0 items</div>
+                                <div class="dropdown_arrow"></div>
+                                <div class="cart_item" id="cart_items"></div >
+                                <div style="padding:20px 0 20px 0; height: 30px; font-size: 14px;" id="H_cart_totprice">Total price is: € 0</div>
+                                <button class="H_cart_button" onclick="completeOrder()">complete order</button> 
+                                <div style="height: 30px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                        
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="content">
+        <div style="display:flex; margin:auto;"><h1 class="float_left">Upcoming keyboards</h1></div>
+        <div class="video_container" name="video">
+            <video class="video" src="video/new Keybaords showcase.mp4" controls></video>
+        </div>
+        <div style="display:flex; margin:auto;"><h1 class="float_left">Keyboards</h1></div>
+            <div class="item_row" name="keyboards">
+                <div class="container">
+                <div class="item" name="chocolate">
+                    <div class="item_image mask"><img src="images/kb/chocolate.png" height="110px"></div>
+                    <div class="item_text">
+                        <div class="item_discription">
+                            This a chocolate theme keyboard
+                            <br><a id="btn_choco" class="buttonGO"href="keyboard.html#L_choco">GO</a>
+                        </div>
+                        <div class="item_name">
+                            Chocolate
+                            <h4>Base Price = € 99,99 </h4>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="container">
+                <div class="item" name="sakura">
+                    <div class="item_image mask" ><img src="images/kb/sakura.png" height="110px"></div>
+                    <div class="item_text">
+                        <div class="item_discription">
+                            This a cherry blossom theme keyboard
+                            <br><a id="btn_sakura"class="buttonGO"href="keyboard.html#L_sakura">GO</a>
+                        </div>
+                        <div class="item_name">
+                            Sakura
+                            <h4>Base Price = € 144,99 </h4>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="container">
+                <div class="item">
+                    <div class="item_image mask"><img src="images/kb/waves.png" height="110px"></div>
+                    <div class="item_text">
+                        <div class="item_discription">
+                            This a ocean theme keyboard
+                            <br><a id="btn_waves" class="buttonGO"href="keyboard.html#L_waves">GO</a>
+                        </div>
+                        <div class="item_name">
+                            Waves
+                            <h4>Base Prie = € 132,99 </h4>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                
+        </div>
+    </main>
+    <footer>
+        <div class="F_discription">
+            <div class="F_discription_text" >
+                <p>About:</p>
+                <p>Our company makes customs keyboards with high end materials</p>
+            </div>
+        </div>
+        <div class="F_links">
+            <div class="F_links__">
+                <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://discord.com"><i class="fa-brands fa-discord"></i></a>
+            </div>
+        </div>
+        
+    </footer>
+    <div class="F_copyright">
+       <div class="margin_auto">© Pixtro Incorporated</div> 
+    </div>
+    <script src="JavaScript/cart.js"></script>
+</body>
+</html>

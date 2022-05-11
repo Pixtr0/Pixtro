@@ -1,0 +1,283 @@
+.float_left{
+    float: left;
+}
+.float_right{
+    float: right;
+}
+.margin_auto{
+    width: fit-content;
+    margin: auto;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+header {
+    color: #000000;
+    text-align: center;
+    background-color: #271664;
+    color: #67dacc;
+    font-size: 30px;
+    display: block;
+    height: 100px;
+    width: 100%;
+}
+.header{
+    width: 800px;
+    height: 100px;
+    margin: auto;
+}
+colgroup{
+    color: #67dacc; /* header text */
+    color: #FF8484;/* hover */
+    color: #271664;/* header */
+    color: #bcfdef;/* backgrond */
+    color: #2374AB;/* icons */
+    color: #000000;/* text */
+}
+body{
+    background-color: #D6FFF6;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+
+.H_logo{
+    margin-left: 10px;
+    display: flex;
+    float: left;
+    text-align: center;
+    justify-content: center;
+    width: 200px;
+    height: 100px;
+}
+.H_logo:active{
+    transform: scale(0.95);
+}
+header nav{
+    display: flex;
+    float: right;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+}
+
+.H_nav_phone, .H_cart{
+    float: left;
+    background-color: transparent;
+    padding: 0 0 0 15px ;
+    width: 33px;
+    margin: auto ;
+    color: #000000;
+    font-weight: 600;
+    font-size: 24px;
+}
+.H_nav_phone{
+    display: none;
+}
+.H_nav_phone_icon{
+    color: #67dacc;
+    cursor: pointer;
+}
+.H_nav_phone_icon:hover{color: #FF8484;}
+.H_nav_phone_icon:active{transform: scale(0.95);}
+
+.H_cart_icon{
+    color: #67dacc;
+    cursor: pointer;
+}
+
+.H_cart_icon:hover{color: #FF8484;}
+.H_cart_icon:active{transform: scale(0.95);}
+
+.dropdown_arrow{
+    z-index: 10;
+    transform: rotate(45deg);
+    height: 20px;
+    width: 20px;
+    background-color: #80eed6;
+    position: absolute;
+    top: -9px;
+    left: 158px;
+}
+.H_cart-dropdown{
+    z-index: 800;
+    display: none;
+    position: relative;
+    background-color:#80eed6;
+    width: 200px;
+    height: fit-content;
+    border-radius: 0 0 5px 5px;
+    top: 33px;
+    right: 150px;
+}
+.H_nav_phone-dropdown{
+    z-index: 800;
+    display:none;
+    position: relative;
+    background-color:#80eed6;
+    width: 200px;
+    height: 130px;
+    border-radius: 0 0 5px 5px;
+    top: 33px;
+    right: 150px;
+}
+
+.H_phone_keyboards,.H_phone_contact{
+    float: left;
+    width: 170px;
+    margin: 20px 0 20px;
+    height: 20px;
+}
+.H_phone_keyboards:hover,.H_phone_contact:hover{
+    text-decoration: underline solid #FF8484 3px;
+}
+.border{
+    position: relative;
+    height: 1px;
+    left: 50px;
+    top: 60px;
+    width: 100px;
+    border-bottom: #0d013b solid 2px;
+}
+
+.H_cart_button{
+    margin-top:10px;
+    background-color: #0d013b;
+    color: #FFFFFF;
+    width: 150px;
+    font-size: 15px;
+    border:0px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 6px 0; 
+    resize: vertical; 
+    cursor: pointer;
+}
+.cart_item p{
+    margin: auto;
+    border-bottom: #0d013b solid 2px;
+    width: fit-content;
+    padding: 10px 0;
+    font-size: 14px;
+    
+}
+.cart_item p button{
+    color: #FF8484;
+    font-weight: 100;
+    background-color: transparent;
+
+}
+.cart_item p button:hover{
+    cursor: pointer;
+}
+.cart_item:hover{
+    cursor: default;
+}
+
+.H_cart:hover .H_cart-dropdown{
+    display: block;
+}
+.H_nav_phone:hover .H_nav_phone-dropdown{
+    display: block;
+}
+.H_Nav_links{
+    display: flex;
+    float: right;
+    height: 30px;
+}
+.H_Nav_links a{
+    border :none;
+    outline :none;
+    float: left;
+    padding: 0 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #67dacc;
+}
+.H_Nav_eff a::before,img::before{
+    content :'';
+    border-bottom :3px solid #FF8484;
+    position: absolute;
+    top: 67px;
+    margin: 0 auto;
+    width: 0;
+    transition: 0.4s;
+}      
+.H_Nav_eff .H_keyboards:hover:before{
+    width: 100px;
+    padding: 0; 
+}     
+.H_Nav_eff .H_cases:hover:before{
+    width: 54px;
+    padding: 0; 
+}
+.H_Nav_eff .H_contact:hover:before{
+    width: 77px;
+    padding: 0; 
+}
+.H_Nav_eff .H_cart:hover:before{
+    width: 77px;
+    padding: 0; 
+}
+
+footer{
+    background-color: #0d013b;
+    height: 250px;
+    width: 100%;
+}
+.F_discription,.F_links{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 400;
+    height: 220px;
+    width: 50%;
+    display: flex;
+    float: left;
+}
+.F_discription_text{
+    width: 500px;
+    margin: auto 0 auto auto;
+    border-right: #FFFFFF 3px solid;
+}
+
+.F_links__{
+    width: 400px;
+    margin: auto auto auto 60px;
+}
+.H_nav_phone-dropdown a{
+    color: #0d013b;
+    font-size: 16px;
+}
+.F_links__ a{
+    float: left;
+    display: flex;
+    margin: 0 10px ;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #2374AB;
+    border-radius: 50%;
+}
+.F_links__ a i{
+    color: #FF8484;
+    width: 20px;
+    margin:auto;
+}
+.F_copyright{
+    font-weight: 400;
+    display: flex;
+    background-color: #000000;
+    color: #ffffff;
+    height: 30px;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+
+
+
+
+

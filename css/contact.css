@@ -1,0 +1,156 @@
+colgroup{
+    color: #67dacc; /* header text */
+    color: #FF8484;/* hover */
+    color: #271664;/* header */
+    color: #bcfdef;/* backgrond */
+    color: #2374AB;/* icons */
+    color: #828282;/* text */
+    color: #000000;/* text */
+}
+h1{
+    color: #FF8484;
+    font-size: 18px;
+}
+h3{
+    font-size:14px;
+    
+}
+.float_left{
+    float: left;
+}
+.float_right{
+    float: right;
+}
+.margin_auto{
+    width: fit-content;
+    margin: auto;
+}
+.formtitle{
+    text-align: center;
+    font-size: 40px;
+}
+.form {
+    color: #000000;
+    text-align: center;
+    width: 700px;
+    margin: 50px auto;
+}
+.row{
+    width: 100%;
+    height: 80px;
+    padding: 10px 0;
+}
+.r_long{
+    height: 150px;
+}
+.r_longer{
+    height: 200px;
+}
+.form_group{
+    height: auto;
+    float: left;
+    text-align: left;
+    
+}
+.form_33{
+    width: 33.3333%;
+    height: inherit;
+    float: left;
+    justify-content: center;
+}
+.form_50{
+    width: 46%;
+    padding-right: 2%;
+    padding-left: 2%;
+    position: relative;
+    min-height: 1px;
+
+}
+.form_100{
+    width: 96%;
+    max-width: 96%;
+    padding-right: 2%;
+    padding-left: 2%;
+    position: relative;
+    min-height: 1px;
+}
+label {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+input[type=message], select, textarea {
+    padding-bottom: 50px;
+} 
+
+.formbox{
+    font-family: monospace;
+    width: 100%;
+    height: auto;
+    padding: 12px;
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    border: 1px solid #271664;
+    border-bottom: 4px solid #2374AB;
+    border-radius: 5px;
+    background-color: #ddfcf5;
+}
+.formbox:focus{
+    border-bottom: 4px solid #FF8484;
+    outline: none;
+}
+textarea{
+    overflow: auto;
+    height: 100px;
+}
+textarea::-webkit-scrollbar-thumb{
+    background-color: #FF8484;
+}
+select{
+    border: none;
+    font-family: monospace;
+}
+button{
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    border:0px;
+    background-color: #2374AB;
+    border-radius: 5px;
+    padding: 10px; /* Some padding */ 
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 6px; /* Bottom margin */
+    resize: vertical;  /* Allow the user to vertically resize the textarea (not horizontally) */
+    cursor: pointer;
+}
+button:active{
+    transform: scale(0.95);
+}
+form{
+    padding: 0 30px;
+    background-color: #bcfdef;
+}
+.cart_item p{
+    margin: auto;
+    border-bottom: #0d013b solid 2px;
+    width: fit-content;
+    padding: 10px 0;
+    font-size: 14px;
+    
+}
+.cart_item p button{
+    color: #FF8484;
+    width: auto;
+    font-weight: 100;
+    font-size: 14px;
+    background-color: transparent;
+
+}
+.cart_item p button:hover{
+    cursor: pointer;
+}
+
+
+

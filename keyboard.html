@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/header_footer.css">
+    <link rel="stylesheet" href="css/keyboards.css">
+    <link rel="stylesheet" href="css/resize.css">
+    <script src="https://kit.fontawesome.com/1d2a01c042.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixtro customs</title>
+    <link rel="icon" type="image/x-icon" href="images/logo top.png">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="H_logo">
+                <a href="index.html"><img src="images/Logo.png" height="100px"></a>
+            </div>
+            <nav>
+                <div class="H_Nav_links H_Nav_eff">
+                    <a class="H_keyboards"  href="keyboard.html">Keyboards</a>
+                    <a class="H_contact"  href="contact.html"> Contact</a>
+                    <div>
+                        <div class="H_nav_phone">
+                            <i class="H_nav_phone_icon fa-solid fa-bars"></i>
+                            <div class="H_nav_phone-dropdown">
+                                <div class="dropdown_arrow"></div>
+                                <a class="H_phone_keyboards"  href="keyboard.html">Keyboards</a>
+                                <div class="border"></div>
+                                <a class="H_phone_contact"  href="contact.html"> Contact</a>
+                            </div>
+                        </div>
+                        <div class="H_cart">
+                            <i class="H_cart_icon fa-solid fa-cart-shopping"></i>
+                            <div class="H_cart-dropdown">
+                                <div style="margin:auto;border-bottom: #0d013b solid 2px; width:fit-content;padding:20px 0 10px 0; height: 30px; font-size: 14px;" id="H_cart_amount">You have: 0 items</div>
+                                <div class="dropdown_arrow"></div>
+                                <div class="cart_item" id="cart_items"></div >
+                                <div style="padding:20px 0 20px 0; height: 30px; font-size: 14px;" id="H_cart_totprice">Total price is: € 0</div>
+                                <button class="H_cart_button" onclick="completeOrder()">complete order</button> 
+                                <div style="height: 30px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                        
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="content">
+                <div class="item_order" id="L_choco">
+                    <div class="item_preview">
+                        <div>
+                            <div class="item__name" id="choco">
+                                Chocolate
+                            </div>
+                            <div class="img_margin"><img style="-webkit-mask-size: 94%; mask-size: 94%;"src="images/kb/chocolate.png" width="320px"></div>
+                            <div class="discription">
+                                <p>
+                                    This is our chocolate themed keyboard with a lot of options for different switches
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item_specs">
+                        <div class="select_menu">
+                            <label for="lube">Switches: </label>
+                            <select name="Switches" id="C_switches">
+                                <option value="5">Gateron red switches - € 5 </option>
+                                <option value="6">Gateron blue switches - € 6 </option>
+                                <option value="4">Gateron brown switches - € 4 </option>
+                                <option value="8">Gateron yellow switches - € 8 </option>
+                                <option value="8">Gateron black switches - € 8 </option>
+                            </select>
+                        </div>
+                        <div class="select_menu"> 
+                            <label for="lube">Stabilizers: </label>
+                            <select name="Stabs" id="C_stabs">
+                                <option value="20">Durrock V2 - € 20</option>
+                                <option value="10">New Fashion Kingdom Snapin - € 10</option>
+                                <option value="5">Cheap Stabilizers - € 5</option>
+                                
+                            </select>
+                        </div>
+                        <div class="select_menu"> 
+                            <label for="lube">Factory lubed: </label>
+                            <select name="Lube" id="C_lube">
+                                <option value="15">Yes - € 15</option>
+                                <option value="0">No - € 0</option>
+                            </select>
+                        </div>
+                        <div class="price float_left menu_bottom">
+                            Price: € <label id="C_result"></label>
+                        </div>
+                        <div class="select_menu_ float_right menu_bottom">
+                            <button id="C_cart"class="Add_Cart" onclick='addToCart(choco,C_result)'>
+                                Add To Cart
+                            </button>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="item_order" id="L_sakura">
+                    
+                    <div class="item_preview">
+                        <div style="margin:auto;">
+                            <div class="item__name" id="sakura">
+                                Sakura
+                            </div>
+                            <div class="img_margin"> 
+                                <img style="-webkit-mask-size: 94%; mask-size: 94%;" src="images/kb/sakura.png" width="320px">
+                            </div>
+                            <div class="discription">
+                                <p>
+                                    This is our cherry blossom themed keyboard with a lot of options for different switches
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item_specs">
+                        
+                        <div class="select_menu">
+                            <label for="lube">Switches: </label>
+                            <select name="Switches" id="S_switches">
+                                <option value="5">Gateron red switches - € 5 </option>
+                                <option value="6">Gateron blue switches - € 6 </option>
+                                <option value="4">Gateron brown switches - € 4 </option>
+                                <option value="8">Gateron yellow switches - € 8 </option>
+                                <option value="8">Gateron black switches - € 8 </option>
+                            </select>
+                        </div>
+                        <div class="select_menu"> 
+                            <label for="lube">Stabilizers: </label>
+                            <select name="Stabs" id="S_stabs">
+                                <option value="20">Durrock V2 - € 20</option>
+                                <option value="10">New Fashion Kingdom Snapin - € 10</option>
+                                <option value="5">Cheap Stabilizers - € 5</option>
+                            </select>
+                        </div>
+                        <div class="select_menu"> 
+                            <label for="lube">Factory lubed: </label>
+                            <select name="Lube" id="S_lube">
+                                <option value="15">Yes - € 15</option>
+                                <option value="0">No - € 0</option>
+                            </select>
+                        </div>
+                        <div class="price float_left menu_bottom">
+                            Price: €  <label id="S_result"></label>
+                        </div>
+                        <div class="select_menu_ float_right menu_bottom">
+                            <button id="S_cart"class="Add_Cart" onclick="addToCart(sakura,S_result)">
+                                Add To Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item_order"id="L_waves">
+                    <div class="item_preview">
+                        <div style="margin:auto;">
+                            <div class="item__name" id="waves">
+                                Waves
+                            </div>
+                            <div class="img_margin"><img style="-webkit-mask-size: 94%; mask-size: 94%;" src="images/kb/waves.png" width="320px"></div>
+                            <div class="discription">
+                                This is our ocean themed keyboard with a lot of options for different switches
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item_specs">
+                        <div class="select_menu">
+                            <label for="lube">Switches: </label>
+                            <select name="Switches" id="W_switches">
+                                <option value="5">Gateron red switches - € 5 </option>
+                                <option value="6">Gateron blue switches - € 6 </option>
+                                <option value="4">Gateron brown switches - € 4 </option>
+                                <option value="8">Gateron yellow switches - € 8 </option>
+                                <option value="8">Gateron black switches - € 8 </option>
+                            </select>
+                        </div>
+                        <div class="select_menu"> 
+                            <label for="lube">Stabilizers: </label>
+                            <select name="Stabs" id="W_stabs">
+                                <option value="20">Durrock V2 - € 20</option>
+                                <option value="10">New Fashion Kingdom Snapin - € 10</option>
+                                <option value="5">Cheap Stabilizers - € 5</option>
+                                
+                            </select>
+                        </div>
+                        <div class="select_menu"> 
+                            <label for="lube">Factory lubed: </label>
+                            <select name="Lube" id="W_lube">
+                                <option value="15">Yes - € 15</option>
+                                <option value="0">No - € 0</option>
+                            </select>
+                        </div>
+                        <div class="price float_left menu_bottom">
+                            Price: €  <label id="W_result"></label>
+                        </div>
+                        <div class="select_menu_ float_right menu_bottom">
+                            <button id="W_cart"class="Add_Cart" onclick="addToCart(waves,W_result)">
+                                Add To Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </main>
+    <footer>
+        <div class="F_discription">
+            <div class="F_discription_text" >
+                <p>About:</p>
+                <p>Our company makes customs keyboards with high end materials</p>
+            </div>
+        </div>
+        <div class="F_links">
+            <div class="F_links__">
+                <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://discord.com"><i class="fa-brands fa-discord"></i></a>
+            </div>
+        </div>
+        
+    </footer>
+    <div class="F_copyright">
+       <div class="margin_auto">© Pixtro Incorporated</div> 
+    </div>
+    <script src="JavaScript/script.js"></script>
+    <script src="JavaScript/cart.js"></script>
+</body>
+</html>
